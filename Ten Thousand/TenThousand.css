@@ -1,0 +1,207 @@
+/*************************************
+       General
+*************************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: fantasy;
+  background-color: white;
+}
+
+.rules {
+  width: 500px;
+  height: 400px;
+  position: fixed;
+  top: 20px;
+  left: 150px;
+  overflow: auto;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+  border-radius: 3px;
+  background: white;
+}
+
+/***********************************
+      Players
+************************************/
+.container {
+  width: 900px;
+  height: 400px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  overflow: auto;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+  border-radius: 3px;
+  background: lightgray;
+}
+
+.container-player-0, .container-player-1 {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+}
+
+.container-player-0 {
+  float: left;
+}
+
+.container-player-1 {
+  float: right;
+}
+
+.player-0, .player-1 {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.active {
+  border: 3px solid blue;
+  border-radius: 3px;
+}
+
+.player-name {
+  text-align: center;
+  font-size: 30px;
+}
+
+.score-0, .score-1 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.current-hand-label {
+  margin: 0 auto;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.current-hand-value {
+  margin: 0 auto;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/*************************************
+      Dice
+*************************************/
+
+.dice-1, .dice-2, .dice-3, .dice-4, .dice-5, .dice-6 {
+  position: absolute;
+  top: 180px;
+  transform: translateX(-50%);
+  height: 80px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.20);
+}
+
+.dice-1 {
+  left: 25%;
+}
+
+.dice-2 {
+  left: 35%;
+}
+
+.dice-3 {
+  left: 45%;
+}
+
+.dice-4 {
+  left: 55%;
+}
+
+.dice-5 {
+  left: 65%;
+}
+
+.dice-6 {
+  left: 75%;
+}
+
+.dice-1:hover, .dice-2:hover, .dice-3:hover, .dice-4:hover, .dice-5:hover, .dice-6:hover {
+  border: 2px solid gray;
+}
+
+.selected-dice {
+  border: 3px solid blue;
+}
+
+
+/*************************************
+      Buttons
+*************************************/
+button {
+  font-family: fantasy;
+  background: none;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 3px;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 300;
+  padding: 3px;
+}
+
+button:hover {
+  border-color: black;
+}
+
+.btn-new {
+  margin: 0;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-roll-dice {
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 38%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-keep-dice {
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-hold {
+  margin: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-rules {
+  margin: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-back {
+  float: left;
+  margin-top: 450px;
+  margin-left: 30px;
+}

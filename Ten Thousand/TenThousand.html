@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html language="en">
+ <header>
+   <meta charset="UTF-8">
+   <title>10,000 Game</title>
+
+   <link rel="stylesheet" type="text/css" href="./TenThousand.css"/>
+
+ </header>
+
+ <body>
+   <div class="container">
+     <div class="container-player-0">
+       <div class="player-0 active" >
+         <div class="player-name">Player 1</div>
+         <div class="score-0">210</div>
+       </div>
+     </div>
+     <div class="container-player-1">
+       <div class="player-1">
+         <div class="player-name">Player 2</div>
+         <div class="score-1">90</div>
+       </div>
+     </div>
+     <div class="current-hand-label">Current Hand:</div>
+     <div class="current-hand-value">0</div>
+
+     <button class="btn-new" type="button" name="new-game">New Game</button>
+     <button class="btn-roll-dice" type="button" name="roll-dice">Roll Dice</button>
+     <button class="btn-keep-dice" type="button" name="keep-dice">Keep Dice</button>
+     <button class="btn-hold" type="button" name="hold">Hold</button>
+
+       <img src="dice-1.png" alt="Dice" class="dice-1" id="dice-1">
+       <img src="dice-2.png" alt="Dice" class="dice-2" id="dice-2">
+       <img src="dice-3.png" alt="Dice" class="dice-3" id="dice-3">
+       <img src="dice-4.png" alt="Dice" class="dice-4" id="dice-4">
+       <img src="dice-5.png" alt="Dice" class="dice-5" id="dice-5">
+       <img src="dice-6.png" alt="Dice" class="dice-6" id="dice-6">
+
+      <button class="btn-rules" type="button" name="Rules">Rules</button>
+
+
+   </div>
+
+   <div class="rules">
+     <p> Rules:<br>
+       1. Player rolls the dice by clicking the roll button.<br>
+       2. Player can then select the dice by clicking on them.<br>
+           Once the dice are selected the player can choose to<br>
+           keep them by clicking the keep button. Points are<br>
+           then added to there current hand score.<br>
+       3. Player can then decide to keep rolling the dice or the<br>
+          Player can complete there turn by clicking the hold button,<br>
+          in which case there current hand score is added to there score.<br>
+       4. Points are determined by the following:<br>
+           If 1, 2, 3, 4, 5, and 6 are all rolled together = 1500 pts<br>
+           Three 1's = 1000 pts<br>
+           Three 2's = 200 pts<br>
+           Three 3's = 300 pts<br>
+           Three 4's = 400 pts<br>
+           Three 5's = 500 pts<br>
+           Three 6's = 600 pts<br>
+           Individual 1's = 100 pts<br>
+           Individual 5's = 50 pts<br>
+       5. If a player rolls and there are no potential points available<br>
+          it is the next players turn and no points are added to there score.<br>
+       6. Game continues until a player reaches 10,000 points.<br>
+       Good Luck!
+
+
+
+     </p>
+   </div>
+
+   <a href="../../projects.html"><button class="btn-back" type="button" name="Rules">Back</button></a>
+
+ </body>
+
+ <script src="./TenThousand.js"></script>
+
+</html>
